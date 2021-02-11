@@ -2,8 +2,8 @@
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from "./component/Header";
+import { Step1 } from "./Step1";
 
-const Step1 = () => <>Step1</>
 const Step2 = () => <>Step2</>
 const Step3 = () => <>Step3</>
 const Result = () => <>Result</>
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route exact path='/' component={Step1} />
+          <Route exact path='/step1' component={Step1} />
           <Route exact path='/step2' component={Step2} />
           <Route exact path='/step3' component={Step3} />
           <Route exact path='/result' component={Result} />
